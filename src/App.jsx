@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { QuestProvider } from './context/QuestContext';
 import { LandingPage } from './pages/LandingPage';
@@ -35,7 +35,7 @@ export default function App() {
   return (
     <AuthProvider>
       <QuestProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={
               <PublicRoute>
@@ -53,7 +53,7 @@ export default function App() {
               <Route path="/quests/:status" element={<QuestListPage />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </QuestProvider>
     </AuthProvider>
   );
