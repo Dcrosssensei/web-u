@@ -72,7 +72,7 @@ export function NewQuestPage() {
                             name="date"
                             value={formData.date}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 rounded-xl bg-white border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                            className="w-full px-4 py-3 rounded-xl bg-white border-2 border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
                         />
                     </div>
 
@@ -91,7 +91,7 @@ export function NewQuestPage() {
                             name="status"
                             value={formData.status}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 rounded-xl bg-white border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-primary transition-all appearance-none"
+                            className="w-full px-4 py-3 rounded-xl bg-white border-2 border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all appearance-none"
                         >
                             <option value="reading">Reading</option>
                             <option value="completed">Completed</option>
